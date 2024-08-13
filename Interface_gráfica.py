@@ -17,9 +17,10 @@ interface.resizable(False, False)
 # Criando Frames
 frame_logo = ttk.Frame(interface, width=850, height=52, bootstyle="primary")
 frame_logo.grid(row=0, column=0, pady=0, padx=0, sticky=NSEW)
+ttk.Separator(interface, orient=HORIZONTAL).grid(row=1, columnspan=1, ipadx=680, pady=0)
 
-ttk.Separator(interface, orient=HORIZONTAL).grid(row=1, column=0, ipadx=680, pady=0)
-
-
+frame_dados = ttk.Frame(interface, width=850, height=65, bootstyle="light")
+frame_dados.grid(row=2, column=0, pady=0, padx=0, sticky=NSEW)
+ttk.Separator(interface, orient=HORIZONTAL).grid(row=3, columnspan=1, ipadx=680)
 
 interface.mainloop()
